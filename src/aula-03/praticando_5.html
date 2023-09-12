@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2</title>
+    <style>
+        .background-blue {
+            background-color: blue;
+        }
+
+        .background-green {
+            background-color: green;
+        }
+
+        .background-red {
+            background-color: red;
+        }
+
+        .background-white {
+            background-color: white;
+        }
+
+        .background-yellow {
+            background-color: yellow;
+        }
+
+        .light-blue {
+            background-color: lightblue;
+        }
+        
+        table{
+            width: 50%;
+            text-align: center;
+        }
+
+        table, tr, td {
+            border: 1px solid red;
+        }
+
+        .principal-tr, .principal-td {
+            padding: 5%;
+        }
+    </style>
+</head>
+<body class="light-blue">
+    <h1>Praticando 5 - Tabelas com colspan e rowspan e planos de fundo</h1>
+
+    <p><a href="./index.html">Voltar ao menu principal</a></p>
+
+    <table class="principal-table">
+        <caption>Tabela com colspan e rowspan</caption>
+        <tr class="background-green principal-tr">
+            <td colspan="2" class="principal-td">Colspan</td>
+            <td class="principal-td">-</td>
+            <td rowspan="3" class="principal-td">Rowspan</td>
+        </tr>
+        <tr class="background-red">
+            <td class="principal-td">-</td>
+            <td class="principal-td">-</td>
+            <td class="principal-td">-</td>
+        </tr>
+        <tr class="background-blue">
+            <td class="principal-td">-</td>
+            <td colspan="2" class="principal-td">Colspan</td>
+        </tr>
+        <tr class="background-yellow">
+            <td class="principal-td">-</td>
+            <td class="principal-td">-</td>
+            <td class="principal-td">-</td>
+            <td class="principal-td">-</td>
+        </tr>
+    </table>
+
+    <br/>
+
+    <table class="background-white">
+        <caption>Legenda</caption>
+        <tr>
+            <td>Linha 1</td>
+            <td class="background-green">-------</td>
+            <td>green</td>
+        </tr>
+        <tr>
+            <td>Linha 2</td>
+            <td class="background-red">-------</td>
+            <td>red</td>
+        </tr>
+        <tr>
+            <td>Linha 3</td>
+            <td class="background-blue">-------</td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>Linha 4</td>
+            <td class="background-yellow">-------</td>
+            <td>yellow</td>
+        </tr>
+    </table>
+</body>
+</html>
