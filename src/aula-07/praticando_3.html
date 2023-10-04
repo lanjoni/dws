@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+  <title>Praticando 3</title>
+  <style>
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 1%;
+    }
+
+    .branco {
+      background-color: white;
+      border-top: 2px solid green;
+      border-bottom: 2px solid green;
+      width: 101vw;
+      height: 75vh;
+      display: flex;
+      margin-left: -1vw;
+    }
+
+    .corpo {
+      width: 70%;
+      border-right: 2px solid green;
+    }
+
+    .titulo {
+      margin-left: 1%;
+    }
+
+    .lateral {
+      width: 30%;
+      text-align: center;
+    }
+
+    .paragrafo {
+      text-align: justify;
+      margin: 1%;
+      line-height: 2;
+      text-indent: 2em;
+    }
+
+    .number {
+      text-align: center;
+      width: 12%;
+      height: 10%;
+      border: 2px solid black;
+      margin: 1%;
+    }
+
+    .numeros {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    body {
+      background-color: lightgreen;
+      font-family: Montserrat;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: 1%;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div>
+      <h1>.:: Meu layout de site com Flexbox ::.</h1>
+      <div class="links">
+        <div><a href="#">Início</a></div>
+        <div><a href="#">Sobre</a></div>
+        <div><a href="#">Produtos</a></div>
+        <div><a href="#">Contato</a></div>
+      </div>
+    </div>
+    <div class="branco">
+      <div class="corpo">
+        <div class="titulo">
+          <h2>Corpo do Site</h2>
+        </div>
+        <div class="numeros">
+          <div class="number">
+            <h1>1</h1>
+            <p>One</p>
+          </div>
+          <div class="number">
+            <h1>2</h1>
+            <p>Two</p>
+          </div>
+          <div class="number">
+            <h1>3</h1>
+            <p>Three</p>
+          </div>
+          <div class="number">
+            <h1>4</h1>
+            <p>Four</p>
+          </div>
+          <div class="number">
+            <h1>5</h1>
+            <p>Five</p>
+          </div>
+          <div class="number">
+            <h1>6</h1>
+            <p>Six</p>
+          </div>
+          <div class="number">
+            <h1>7</h1>
+            <p>Seven</p>
+          </div>
+          <div class="number">
+            <h1>8</h1>
+            <p>Eight</p>
+          </div>
+          <div class="number">
+            <h1>9</h1>
+            <p>Nine</p>
+          </div>
+          <div class="number">
+            <h1>10</h1>
+            <p>Ten</p>
+          </div>
+        </div>
+      </div>
+      <div class="lateral">
+        <h2>Box lateral</h2>
+        <p class="paragrafo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <div>Criado por João Augusto</div>
+        <div>lanjoni@proton.me</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
