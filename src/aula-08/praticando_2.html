@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praticando 2</title>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+  <style>
+    body {
+      background: rgb(2,0,36);
+      background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,121,77,1) 29%, rgba(0,212,255,1) 100%);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Montserrat;
+    }
+
+    button {
+      font-size: large;
+      padding: 2%;
+    }
+
+    input, textarea, select, button {
+      border-radius: 10px;
+    }
+
+    .linha {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1%;
+    }
+
+    .esquerda {
+      flex: 1;
+      text-align: right;
+      margin-right: 1%;
+    }
+
+    .direita {
+      flex: 1;
+      text-align: left;
+      margin-left: 1%;
+    }
+
+    .principal {
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/83/The_GNU_logo.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 20%;
+      height: 95vh;
+    }
+
+    [type=radio] { 
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    [type=radio] + img {
+      cursor: pointer;
+    }
+
+    [type=radio]:checked + img {
+      outline: 2px solid #f00;
+    }
+  </style>
+</head>
+<body>
+  <div class="principal">
+    <h1>Praticando 2 - Formulário HTML Estilizado</h1>
+
+    <form>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="nome">Nome</label>
+        </div>
+        <div class="direita">
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" value="João Augusto">
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="email">Email</label>
+        </div>
+        <div class="direita">
+          <input type="email" name="email" id="email" placeholder="seu@email.aqui">
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="carro">Marca de carro preferida</label>
+        </div>
+        <div class="direita">
+          <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="observacoes">Observações</label>
+        </div>
+        <div class="direita">
+          <textarea name="observacoes" id="observacoes"></textarea>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="linguagem">Linguagem Web favorita: </label>
+        </div>
+        <div class="direita">
+          <label>
+            <input type="radio" name="linguagem" value="html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" height="80" alt="HTML Logo">
+          </label>
+          <label>
+            <input type="radio" name="linguagem" value="css">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" height="80" alt="CSS Logo">
+          </label>
+          <label>
+            <input type="radio" name="linguagem" value="javascript">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" height="80" alt="JavaScript Logo">
+          </label>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <label for="filmes">Filmes que eu quero ver quando lançar:</label>
+        </div>
+        <div class="direita">
+          <input type="checkbox" name="filmes" id="avengers" value="avengers"><a href="#">Avengers: The Kang Dynasty</a></input>
+          <br/>
+          <input type="checkbox" name="filmes" id="aquaman" value="aquaman"><a href="#">Aquaman 2: O Reino Perdido</a></input>
+          <br/>
+          <input type="checkbox" name="filmes" id="themarvels" value="themarvels"><a href="#">The Marvels</a></input>
+          <br/>
+          <input type="checkbox" name="filmes" id="deadpool" value="deadpool"><a href="#">Deadpool 3</a></input>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="esquerda">
+          <button type="submit">Enviar</button>
+        </div>
+        <div class="direita">
+          <button type="reset">Limpar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

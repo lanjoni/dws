@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praticando 1</title>
+</head>
+<body>
+  <h1>Praticando 1 - Formulários HTML</h1>
+
+  <form>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" placeholder="Seu nome" value="João Augusto">
+    <br/>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="seu@email.aqui">
+    <br/>
+    <label for="carro">Marca de carro preferida</label>
+    <select>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br/>
+    <label for="observacoes">Observações</label>
+    <br/>
+    <textarea name="observacoes" id="observacoes"></textarea>
+    <br/>
+    <br/>
+    <label for="linguagem">Linguagem Web favorita: </label>
+    <input type="radio" name="linguagem">HTML</input>
+    <input type="radio" name="linguagem">CSS</input>
+    <input type="radio" name="linguagem">JavaScript</input>
+    <br/>
+    <br/>
+    <label for="filmes">Filmes que eu quero ver quando lançar:</label>
+    <br/>
+    <input type="checkbox" name="filmes" id="avengers" value="avengers">Avengers: The Kang Dynasty</input>
+    <br/>
+    <input type="checkbox" name="filmes" id="aquaman" value="aquaman">Aquaman 2: O Reino Perdido</input>
+    <br/>
+    <input type="checkbox" name="filmes" id="themarvels" value="themarvels">The Marvels</input>
+    <br/>
+    <input type="checkbox" name="filmes" id="deadpool" value="deadpool">Deadpool 3</input>
+    <br/>
+    <br/>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+  </form>
+</body>
+</html>
