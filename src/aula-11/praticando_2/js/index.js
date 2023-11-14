@@ -22,6 +22,19 @@ function mphone(v) {
   return r;
 }
 
+function limpar(){
+  document.getElementById('nome').classList.remove('is-valid');
+  document.getElementById('nome').classList.add('is-invalid');
+  document.getElementById('email').classList.remove('is-valid');
+  document.getElementById('email').classList.add('is-invalid');
+  document.getElementById('telefone').classList.remove('is-valid');
+  document.getElementById('telefone').classList.add('is-invalid');
+  document.getElementById('idade').classList.remove('is-valid');
+  document.getElementById('idade').classList.add('is-invalid');
+  document.getElementById('observacoes').classList.remove('is-valid');
+  document.getElementById('observacoes').classList.add('is-invalid');
+}
+
 function validar(id) {
   let campo = document.getElementById(id);
   let valor = campo.value.trim();

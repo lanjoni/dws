@@ -2,15 +2,16 @@ let squareSelected = null;
 
 function updateSelected(squareId) {
     const square = document.getElementById(squareId);
-    square.style.border = "5px solid yellow";
 
     if (squareInMovement && squareId === squareSelected.id) {
+        square.style.border = "5px solid yellow";
         moveParaPosicaoInicial(square);
         squareInMovement = false;
         squareSelected = null;
     } else if (squareInMovement) {
         alert("Atenção, há algum square Selected, desselecione-o para selecionar outro");
     } else {
+        square.style.border = "5px solid yellow";
         const isSelected = square === squareSelected;
         const squares = document.querySelectorAll(".sqr");
         
