@@ -1,0 +1,16 @@
+# Introdução a Linguagem PHP
+### João Augusto Lissoni Lanjoni
+
+A linguagem de programação PHP (sigla para Hypertext Preprocessor), surgiu em 1994, criada por **Rasmus Lerdorf** com objetivo de ter dados estatísticos sobre os acessos ao seu site pessoal. Bem, Rasmus nasceu na Groenlândia mas cresceu na Dinamarca, sendo um experiente programador que usava C e Perl, afinal, os compiladores e runtimes escritos de PHP até hoje são em sua maioria em C, na qual a sintaxe do PHP é diretamente inspirada no Perl (achou que o sinal de cifrão para variáveis veio de onde?).
+
+A liberação do código-fonte em 1996 chamou a atenção de diversos entusiastas, como por exemplo os israelenses Zeev Suraski e Andi Gutmans, que futuramente seriam responsáveis pela criação e manutenção das primeiras Zend Engines para o PHP. Ambos se destacaram por reescrever módulos parecidos com o de Script para o PHP se tornar o que temos hoje, assim, a partir de 1998 o PHP já se destacava na web, afinal, nesta mesma época seu nome passou a ser PHP: Hypertext Preprocessor, chegando em sua terceira versão, começando a suportar orientação a objetos.
+
+Em 2000 o PHP 4.0 surgiu baseado no motor Zend Engine (lançado no ano anterior), e em 2004 o PHP 5 finalmente foi recebido junto da Zend Engine 2.0! Bem, e apenas depois de 11 anos surgiu o PHP 7 (não houve um PHP 6, mas, houveram tentativas de lançamento que acabaram falhando), com um novo motor que apresentava performance até 9 vezes superior a versão anterior!
+
+O PHP 8 chegou em 2020 com aprimoramentos de segurança, funcionalidades, e claro, na API DOM que constantemente recebe atualizações. A versão estável do PHP hoje é a 8.3.3!
+
+Hoje o PHP faz parte de mais de 70% da Internet como conhecemos, participando de diferentes maneiras! Seu principal conceito para utilização é permitir integração direta com páginas estáticas e dinâmicas, mas, sendo processado ao lado do próprio servidor (server-side). Isso significa que toda transação que requer processamento ocorre do lado do servidor, e o usuário final apenas visualiza o resultado de um determinado processamento, recebendo um corpo HTML de resposta (ou no caso de APIs o formato informado - podendo ser JSON, por exemplo).
+
+Sendo multiplataformas, estando disponível em praticamente todos os sistemas operacionais para utilização! Você pode utilizar o próprio servidor Apache embutido do PHP para iniciar um servidor (usando o comando `php -S localhost:port`), pode utilizar um servidor Apache instalado a parte e para facilitar seu trabalho (caso esteja no Windows) pode utilizar o XAMPP, que utiliza um client com Apache e MySQL por padrão! Para hospedagem, existem diversos clientes como Locaweb e Hostgator. Além disso, você pode executar sua aplicação PHP em container e utilizar algum serviço de cloud para execução. Caso esteja utilizando o XAMPP, você pode ver as especificações do PHP em `localhost/dashboard/phpinfo.php`, que seria o mesmo de ter um arquivo PHP chamando a função [phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
+
+Bem, para editar seu arquivos PHP você pode utilizar o editor de sua preferência, destacando sempre o Visual Studio Code, Notepad++, Sublime Text, PHP Storm e meus preferidos Neovim (PHP possui suporte nativo no Vim) e Emacs!
