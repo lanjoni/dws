@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.up-bar {
+  background-color: #6e99b6; 
+  padding: 25px;
+  text-align: right;
+}
+
+.up-bar a {
+  margin-left: 60px;
+  text-decoration: none; 
+  color: black;
+}
+
+.up-bar a:hover {
+  text-decoration: underline;
+  color: black;
+  background-color: #748692;
+}
+
+.menu {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.menu h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 60px;
+}
+
+p {
+  font-size: 50px;
+  color: rgb(255, 187, 2);
+  text-shadow: 4px 4px 0 black;
+  font-weight: bold;
+}
+
+.mid-bar {
+  background-image: url("https://t3.ftcdn.net/jpg/04/40/13/78/360_F_440137850_sBJOKpItVGgxB2XgCY4pxJECaU3QTEXC.jpg");
+  background-size: cover; 
+  background-position: center center;
+  padding: 200px;
+  text-align: center;
+}
+
+.mid-bar p{
+  font-family: 'Anton', sans-serif;
+}
+
+.container h1 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+}
+
+.search-input {
+  width: 500px; 
+  height: 40px; 
+  font-size: 25px; 
+  margin-top: 10px;
+}
+
+.search-submit {
+  width: 150px; 
+  height: 45px; 
+  font-size: 25px; 
+  margin-top: 10px;
+}
+
+.links-busca{
+  margin-top: 50px;
+  margin-left: 100px;
+  line-height: 3;
+}
+
+.col-md-4{
+  background-color: #e7e7e7; 
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.table tr th {
+  padding: 10px; 
+  background-color: rgb(72, 166, 93); 
+  color: white;
+}
